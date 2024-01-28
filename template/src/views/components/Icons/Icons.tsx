@@ -3,15 +3,15 @@ import React from 'react';
 import VectorIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 // import Ionicons from 'react-native-vector-icons/Ionicons';
 
-import { createStyles, useAppTheme } from 'theme';
+import { createStyles, useAppTheme } from 'views/contexts/ThemeContext';
 
 type IconSizeProps = {
   iconSizes: keyof typeof IconSizes;
 };
 
 export interface IconProps {
-  size?: IconSizeProps['iconSizes'];
-  name: string;
+  size?: IconSizeProps['iconSizes'] | number;
+  name?: string;
   color?: string;
   backgroundColor?: string;
 }
@@ -28,27 +28,14 @@ const IconSizes = {
   extraLarge: 38,
 };
 
-export const Icon = ({ size = 'medium', name, color }: IconProps) => {
-  const { colors } = useAppTheme(_styles);
-  return <VectorIcons name={name} size={IconSizes[size]} color={color || colors.icon.accent} />;
-};
-
-export const IconButton: React.FC<IconButtonProps> = ({
-  name,
-  size = 'medium',
-  color,
-  onPress,
-  children,
-}) => {
+export const Icon = ({ size = 'medium', name = 'question', color }: IconProps) => {
   const { colors } = useAppTheme(_styles);
   return (
-    <VectorIcons.Button
+    <VectorIcons
       name={name}
-      size={IconSizes[size]}
-      color={color || colors.icon.accent}
-      onPress={onPress}>
-      {children}
-    </VectorIcons.Button>
+      size={typeof size === 'number' ? size : IconSizes[size]}
+      color={color || colors.icon.primary}
+    />
   );
 };
 

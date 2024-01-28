@@ -3,7 +3,7 @@ import React from 'react';
 import { View, ViewStyle } from 'react-native';
 
 import { getDebugStyle } from 'components/uiKit/utils.ts';
-import { createStyles, useAppTheme } from 'theme';
+import { createStyles, useAppTheme } from 'views/contexts/ThemeContext';
 
 import { RNText } from '../../RNText';
 

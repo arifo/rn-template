@@ -1,0 +1,52 @@
+{
+  "greeting": "Hello!",
+  "welcome": "Welcome to my app!",
+
+  "terms_of_service": "Terms of Service",
+  "privacy_policy": "Privacy Policy",
+
+  "version": "Version",
+
+  "theme":{
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "system_default": "System default"
+  },
+
+  "language": "Language",
+
+  "nav": {
+    "home": "Home",
+    "security": "Security",
+    "settings": "Settings",
+    "themes": "Themes",
+    "languages": "Languages",
+    "new_password": "New Password",
+    "password": "Password"
+  },
+
+  "password": {
+    "generate": "Generate",
+    "website_app_name": "Website/App Name",
+    "username_email": "Username/Email",
+    "password": "Password",
+    "category": "Category",
+    "add_category": "Add category",
+    "save_password": "Save Password",
+    "use_password": "Use Password",
+    "weak": "Weak",
+    "okay": "Okay",
+    "strong": "Strong",
+    "extreme": "Extreme",
+    "password_length": "Password Length",
+    "count_character": "{{count}} characters",
+    "uppercase_az": "Uppercase (A-Z)",
+    "lowercase_az": "Lowercase (a-z)",
+    "numbers_123": "Numbers (0-9)",
+    "symbols_": "Symbols (!@#$%^&*)",
+    "username_email_placeholder": "Enter your username or email",
+    "password_placeholder": "Enter your password"
+  }
+
+}

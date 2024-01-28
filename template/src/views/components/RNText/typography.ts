@@ -136,8 +136,8 @@ export const TypeScale = StyleSheet.create({
    * Labels for form elements, providing context and clarity.
    */
   form_label: {
-    fontSize: s(14),
-    fontFamily: FontFamily.semiBold,
+    fontSize: s(16),
+    fontFamily: FontFamily.regular,
     lineHeight: lhm(14, 1.5),
   },
 
@@ -148,5 +148,16 @@ export const TypeScale = StyleSheet.create({
     fontSize: s(16),
     fontFamily: FontFamily.regular,
     lineHeight: lhm(16, 1.5),
+  },
+
+  primary_text: {
+    fontSize: s(16),
+    fontFamily: FontFamily.semiBold,
+    lineHeight: lhm(16, 1.5),
+  },
+  secondary_text: {
+    fontSize: s(14),
+    fontFamily: FontFamily.regular,
+    lineHeight: lhm(14, 1.5),
   },
 });

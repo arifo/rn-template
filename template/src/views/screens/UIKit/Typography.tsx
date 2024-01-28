@@ -3,14 +3,15 @@ import React from 'react';
 import { View } from 'react-native';
 
 import { FontFamily, TypeScale } from 'components/RNText/typography.ts';
-import { useAppTheme } from 'theme';
-import { ContainerView, SimpleListHeading, RNText } from 'views/components';
+import { SimpleListHeading, RNText, ContainerView } from 'views/components';
+import { useAppTheme } from 'views/contexts/ThemeContext';
 
 export const UIKitTypography = () => (
-  <ContainerView
-    title={'Typography'}
-    scrollable={true}
-    contentViewProps={{ contentContainerStyle: { paddingBottom: 24 } }}>
+  <ContainerView.Secondary
+    headerProps={{
+      title: 'Typography',
+      leading: 'back_button',
+    }}>
     <SimpleListHeading label={'Font Family'} />
     <FontFamilyText fontFamily={FontFamily.black} text={'FontFamily.black'} />
     <FontFamilyText fontFamily={FontFamily.extraBold} text={'FontFamily.extraBold'} />
@@ -74,7 +75,7 @@ export const UIKitTypography = () => (
       typeScale={'list_item_text'}
       usage={'Text used for listing items, maintaining consistency across lists'}
     />
-  </ContainerView>
+  </ContainerView.Secondary>
 );
 
 const FontFamilyText = ({ fontFamily, text }: { fontFamily: string; text: string }) => (

@@ -8,9 +8,11 @@ import { UIKitNav } from 'navigation/UIKitNav.tsx';
 import LoginScreen from 'views/screens/Auth/Login';
 import SignupScreen from 'views/screens/Auth/Signup';
 import HomeScreen from 'views/screens/Home';
-import SettingsScreen from 'views/screens/Settings';
+import SettingsScreen from 'views/screens/SettingsScreens/Settings';
 
-import { Routes, RootNavParamList, TabNavParamList, UIKitRoutes } from './Routes';
+import { RootNavParamList, Routes, TabNavParamList } from './Routes';
+import { LanguageSettings } from 'views/screens/SettingsScreens/Languages';
+import { ThemeSettings } from 'views/screens/SettingsScreens/Themes';
 
 const Stack = createNativeStackNavigator<RootNavParamList>();
 const Tab = createBottomTabNavigator<TabNavParamList>();
@@ -31,6 +33,8 @@ function RootNavigator() {
         <Stack.Screen name={Routes.Login} component={LoginScreen} />
         <Stack.Screen name={Routes.Signup} component={SignupScreen} />
         <Stack.Screen name={Routes.UIKitRoot} component={UIKitNav} />
+        <Stack.Screen name={Routes.ThemeSettings} component={ThemeSettings} />
+        <Stack.Screen name={Routes.LanguageSettings} component={LanguageSettings} />
       </Stack.Navigator>
     </NavigationContainer>
   );

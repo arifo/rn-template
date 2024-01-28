@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ListItemCompact } from 'components/uiKit/ListItems/Compact/ListItemCompact.tsx';
+import { ListItemCompact } from 'components/uiKit/ListItems/ListItemCompact.tsx';
 import { UIKitRoutes, UIKitStackScreenPropTypes } from 'navigation/Routes.ts';
 import { ContainerView, SimpleListHeading } from 'views/components';
 
@@ -11,7 +11,7 @@ const UIKit = ({ navigation }: Props) => {
   };
 
   return (
-    <ContainerView title={'UIKit'}>
+    <ContainerView.Main headerProps={{ title: 'UIKit', leading: 'back_button' }}>
       <ListItemCompact label={'Typography'} onPress={() => navTo(UIKitRoutes.UIKitTypography)} />
 
       <SimpleListHeading label={'Components'} />
@@ -20,7 +20,7 @@ const UIKit = ({ navigation }: Props) => {
         onPress={() => navTo(UIKitRoutes.UIKitListHeading)}
       />
       <ListItemCompact label={'List Items'} onPress={() => navTo(UIKitRoutes.UIKitListItems)} />
-    </ContainerView>
+    </ContainerView.Main>
   );
 };
 

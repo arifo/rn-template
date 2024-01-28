@@ -6,11 +6,11 @@ import { ContainerView, RNText } from 'views/components';
 
 export default function HomeScreen() {
   return (
-    <ContainerView title={'Home'}>
+    <ContainerView.Main title={'Home'}>
       <View style={styles.container}>
         <RNText>Home</RNText>
       </View>
-    </ContainerView>
+    </ContainerView.Main>
   );
 }
 

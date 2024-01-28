@@ -1,0 +1,53 @@
+{
+  "greeting": "Привет!",
+  "welcome": "Добро пожаловать в мое приложение!",
+
+  "terms_of_service": "Условия использования",
+  "privacy_policy": "Политика конфиденциальности",
+
+  "version": "Версия",
+
+  "theme": {
+    "theme": "Тема",
+    "dark": "Темный",
+    "light": "Светлый",
+    "system_default": "По умолчанию (системный)"
+  },
+
+  "language": "Язык",
+
+  "nav": {
+    "home": "Главная",
+    "security": "Безопасность",
+    "settings": "Настройки",
+    "themes": "Темы",
+    "languages": "Языки",
+    "new_password": "Новый пароль",
+    "password": "Пароль"
+  },
+
+  "password": {
+    "generate": "Сгенерировать",
+    "website_app_name": "Имя веб-сайта/приложения",
+    "username_email": "Имя пользователя/Электронная почта",
+    "password": "Пароль",
+    "category": "Категория",
+    "add_category": "Добавить категорию",
+    "save_password": "Сохранить пароль",
+    "use_password": "Использовать пароль",
+    "weak": "Слабый",
+    "okay": "Хороший",
+    "strong": "Сильный",
+    "extreme": "Экстремальный",
+    "password_length": "Длина пароля",
+    "count_character": "{{count}} символов",
+    "uppercase_az": "Прописные буквы (A-Z)",
+    "lowercase_az": "Строчные буквы (a-z)",
+    "numbers_123": "Цифры (0-9)",
+    "symbols_": "Символы (!@#$%^&*)",
+    "username_email_placeholder": "Введите имя пользователя или эл. почту",
+    "password_placeholder": "Введите ваш пароль"
+  }
+
+
+}

@@ -18,7 +18,6 @@ export type UIKitNavParamList = {
   UIKitListHeading: undefined;
   UIKitListItems: undefined;
 };
-
 export enum UIKitRoutes {
   UIKit = 'UIKit',
   UIKitTypography = 'UIKitTypography',
@@ -31,6 +30,8 @@ export type RootNavParamList = {
   Login: undefined;
   Signup: undefined;
   UIKitRoot: NavigatorScreenParams<UIKitNavParamList>;
+  ThemeSettings: undefined;
+  LanguageSettings: undefined;
 };
 
 export enum RootNavRoutes {
@@ -38,6 +39,8 @@ export enum RootNavRoutes {
   Login = 'Login',
   Signup = 'Signup',
   UIKitRoot = 'UIKitRoot',
+  ThemeSettings = 'ThemeSettings',
+  LanguageSettings = 'LanguageSettings',
 }
 
 export const Routes = {

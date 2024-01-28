@@ -1,12 +1,13 @@
-import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
+
 import { ColorSchemeName } from 'react-native';
 
-import { LangTag } from 'locale/types.ts';
+import { LangTag } from 'managers/LocalManager/types.ts';
 import type { RootState } from 'store';
 
 interface SettingsState {
-  appTheme: ColorSchemeName;
+  appTheme: ColorSchemeName | null;
   appLanguage: LangTag | null;
 }
 

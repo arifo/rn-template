@@ -1,4 +1,4 @@
-import { ThemeManager } from 'theme/ThemeManager.ts';
+import { ThemeManager } from 'managers/ThemeManager';
 
 export const getDebugStyle = (theme: typeof ThemeManager) => ({
   borderWidth: 1,

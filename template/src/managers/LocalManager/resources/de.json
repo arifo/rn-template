@@ -1,0 +1,44 @@
+{
+  "greeting": "Hallo!",
+  "welcome": "Willkommen in meiner App!",
+
+  "terms_of_service": "Nutzungsbedingungen",
+  "privacy_policy": "Datenschutzrichtlinie",
+
+  "version": "Version",
+
+  "nav": {
+    "home": "Startseite",
+    "security": "Sicherheit",
+    "settings": "Einstellungen",
+    "themes": "Themen",
+    "languages": "Sprachen",
+    "new_password": "Neues Passwort",
+    "password": "Passwort"
+  },
+
+  "password": {
+    "generate": "Generieren",
+    "website_app_name": "Website/App-Name",
+    "username_email": "Benutzername/E-Mail",
+    "password": "Passwort",
+    "category": "Kategorie",
+    "add_category": "Kategorie hinzufügen",
+    "save_password": "Passwort speichern",
+    "use_password": "Passwort verwenden",
+    "weak": "Schwach",
+    "okay": "In Ordnung",
+    "strong": "Stark",
+    "extreme": "Extrem",
+    "password_length": "Passwortlänge",
+    "count_character": "{{count}} Zeichen",
+    "uppercase_az": "Großbuchstaben (A-Z)",
+    "lowercase_az": "Kleinbuchstaben (a-z)",
+    "numbers_123": "Zahlen (0-9)",
+    "symbols_": "Symbole (!@#$%^&*)",
+    "username_email_placeholder": "Geben Sie Ihren Benutzernamen oder Ihre E-Mail ein",
+    "password_placeholder": "Geben Sie Ihr Passwort ein"
+  }
+
+
+}

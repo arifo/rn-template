@@ -1,0 +1,52 @@
+{
+  "greeting": "Salut!",
+  "welcome": "Bienvenue dans mon application !",
+
+  "terms_of_service": "Conditions d'utilisation",
+  "privacy_policy": "Politique de confidentialité",
+
+  "version": "Version",
+
+  "theme": {
+    "title": "Thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+
+  "language": "Langue",
+
+  "nav": {
+    "home": "Accueil",
+    "security": "Sécurité",
+    "settings": "Paramètres",
+    "themes": "Thèmes",
+    "languages": "Langues",
+    "new_password": "Nouveau mot de passe",
+    "password": "Mot de passe"
+  },
+
+  "password": {
+    "generate": "Générer",
+    "website_app_name": "Nom du site/App",
+    "username_email": "Nom d'utilisateur/E-mail",
+    "password": "Mot de passe",
+    "category": "Catégorie",
+    "add_category": "Ajouter une catégorie",
+    "save_password": "Enregistrer le mot de passe",
+    "use_password": "Utiliser le mot de passe",
+    "weak": "Faible",
+    "okay": "Correct",
+    "strong": "Fort",
+    "extreme": "Extrême",
+    "password_length": "Longueur du mot de passe",
+    "count_character": "{{count}} caractère",
+    "uppercase_az": "Majuscules (A-Z)",
+    "lowercase_az": "Minuscules (a-z)",
+    "numbers_123": "Chiffres (0-9)",
+    "symbols_": "Symboles (!@#$%^&*)",
+    "username_email_placeholder": "Entrez votre nom d'utilisateur ou votre e-mail",
+    "password_placeholder": "Entrez votre mot de passe"
+  }
+
+}

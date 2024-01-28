@@ -7,9 +7,9 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import AppContainer from 'AppContainer';
-import { LocaleProvider } from 'locale/LocaleProvider.tsx';
 import { persistor, store } from 'store';
-import { ThemeProvider } from 'theme';
+import { ThemeContextProvider } from 'views/contexts/ThemeContext';
+import { LocaleContextProvider } from 'views/contexts/LocaleContext';
 
 const App = () => {
   useEffect(() => {
@@ -27,11 +27,11 @@ const App = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <SafeAreaProvider>
-          <LocaleProvider>
-            <ThemeProvider>
+          <LocaleContextProvider>
+            <ThemeContextProvider>
               <AppContainer />
-            </ThemeProvider>
-          </LocaleProvider>
+            </ThemeContextProvider>
+          </LocaleContextProvider>
         </SafeAreaProvider>
       </PersistGate>
     </Provider>

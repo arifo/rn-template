@@ -1,16 +1,17 @@
 import React from 'react';
 
-import { useAppTheme } from 'theme';
 import { ContainerView, SimpleListHeading } from 'views/components';
+import { useAppTheme } from 'views/contexts/ThemeContext';
 
 export const ListHeadingComponents = () => {
-  const { colors } = useAppTheme(null);
+  const {} = useAppTheme(null);
   return (
-    <ContainerView
-      title={'List Headings'}
-      scrollable={true}
-      contentViewProps={{ contentContainerStyle: { paddingBottom: 24 } }}>
+    <ContainerView.Secondary
+      headerProps={{
+        title: 'List Headings',
+        leading: 'back_button',
+      }}>
       <SimpleListHeading label={'SimpleListHeading'} debug />
-    </ContainerView>
+    </ContainerView.Secondary>
   );
 };
