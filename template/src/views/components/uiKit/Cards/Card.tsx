@@ -17,7 +17,7 @@ const _styles = createStyles(theme => ({
   card: {
     overflow: 'hidden',
     marginBottom: theme.spacing.m,
-    backgroundColor: theme.colors.background.card,
+    backgroundColor: theme.colors.background.cardPrimary,
     borderRadius: theme.layout.borderRadius.main,
   },
 }));

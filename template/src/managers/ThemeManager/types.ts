@@ -47,7 +47,8 @@ export type ColorProps = {
     primary: string;
     secondary: string;
     secondaryAlpha: string;
-    card: string;
+    cardPrimary: string;
+    cardSecondary: string;
     modal: string;
     modalInverse: string;
     buttonPrimary: string;
